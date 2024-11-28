@@ -7,15 +7,21 @@ body {
 }
 
 header {
-    background-color: #d88a8a; /* Rojo pastel */
+    background-color: #fef4f0; /* Color crema */
     color: white;
     padding: 10px 20px;
 }
 
 nav {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+}
+
+nav .logo {
+    width: 1px; /* Ajusta el tamaño del logo aquí */
+    height: auto; /* Mantiene la proporción del logo */
+    margin-right: auto; /* Espacio entre el logo y los enlaces */
+    padding: 5px; /* Espacio alrededor del logo */
 }
 
 nav ul {
@@ -25,8 +31,16 @@ nav ul {
 }
 
 nav a {
-    color: white;
+    color: black;
     text-decoration: none;
+    display: flex;
+    align-items: center; /* Alinea verticalmente el texto y el icono */
+}
+
+.icono-tarta {
+    width: 20px; /* Ajusta el tamaño del icono de la tarta */
+    height: auto; /* Mantiene la proporción del icono */
+    margin-left: 5px; /* Espacio entre el texto y el icono */
 }
 
 /* Estilos de la sección hero */
@@ -62,7 +76,7 @@ nav a {
 /* Estilos del formulario de contacto */
 .contacto {
     padding: 40px 20px;
-    background-color: #fef4f0; /* Color crema */
+    background-color: #d88a8a; /* Rojo pastel */
     display: flex;
     flex-direction: column; /* Asegura que los elementos estén uno debajo del otro */
     align-items: center; /* Centra el contenido horizontalmente */
@@ -116,6 +130,15 @@ footer {
 
 /* Media Queries para móviles */
 @media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Cambia la dirección a vertical en móviles */
+        align-items: flex-start; /* Alinea los elementos a la izquierda */
+    }
+
+    nav .logo {
+        margin-bottom: 10px; /* Espacio entre el logo y los enlaces en móviles */
+    }
+
     .hero h1 {
         font-size: 2rem;
     }

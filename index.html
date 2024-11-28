@@ -14,9 +14,8 @@
             </div>
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#caracteristicas">Características</a></li>
-                <li><a href="#descargar">Descargar</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="valores.html">Valores</a></li>
+                <li><a href="historia.html">Historia</a></li>
             </ul>
         </nav>
     </header>
@@ -42,10 +41,28 @@
                 </a>
             </div>
         </section>
+
+        <section id="contacto" class="contacto">
+            <h3>Contacto para Empresas de Pastelería</h3>
+            <form action="ruta-del-script-para-enviar-email" method="post">
+                <label for="nombre">Nombre de la Empresa:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono">
+                
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
     </main>
 
-    <footer id="contacto">
-        <h3>Contacto</h3>
+    <footer>
         <p>Email: contacto@nuestraapp.com</p>
         <p>Teléfono: +34 123 456 789</p>
         <p>Síguenos en redes sociales:</p>

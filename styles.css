@@ -1,0 +1,127 @@
+/* Estilos globales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdf5e6; /* Color crema */
+    color: #4b3832; /* Color amigable */
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Encabezado */
+header {
+    background-color: #f8e1d4; /* Color pastel */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav .logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #4b3832;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #a56443;
+}
+
+/* Sección principal */
+.hero {
+    padding: 50px 20px;
+    background-color: #fce8e0; /* Color pastel suave */
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin: 0 0 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 0 0 20px;
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Sección de descarga */
+.descarga {
+    padding: 40px 20px;
+    background-color: #fef4f0; /* Color crema */
+}
+
+.descarga h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.qr-code img {
+    width: 200px;
+    height: auto;
+    margin: 20px 0;
+}
+
+.download-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.download-links a img {
+    width: 150px;
+    height: auto;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background-color: #f8e1d4;
+    color: #4b3832;
+    margin-top: 20px;
+}
+
+footer h3 {
+    font-size: 1.5rem;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer .social-links a {
+    text-decoration: none;
+    color: #4b3832;
+    margin: 0 5px;
+}
+
+footer .social-links a:hover {
+    color: #a56443;
+}

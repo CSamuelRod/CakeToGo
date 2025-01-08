@@ -4,43 +4,47 @@ body {
     margin: 0;
     padding: 0;
     background-color: #fff7f0; /* Color crema claro */
+    color: #333;
 }
 
 header {
     background-color: #fef4f0; /* Color crema */
-    color: white;
+    color: black;
     padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
-nav .logo {
-    width: 1px; /* Ajusta el tamaño del logo aquí */
-    height: auto; /* Mantiene la proporción del logo */
-    margin-right: auto; /* Espacio entre el logo y los enlaces */
-    padding: 5px; /* Espacio alrededor del logo */
+nav .logo img {
+    width: 110%; /* Tamaño ajustado del logo */
+    max-width: 120px; /* Límite máximo en píxeles */
+    height: auto; /* Mantiene la proporción */
 }
 
 nav ul {
     list-style: none;
     display: flex;
     gap: 15px;
+    padding: 0;
 }
 
 nav a {
-    color: black;
+    color: #333;
     text-decoration: none;
+    font-size: 1rem;
     display: flex;
-    align-items: center; /* Alinea verticalmente el texto y el icono */
+    align-items: center;
 }
 
 .icono-tarta {
-    width: 20px; /* Ajusta el tamaño del icono de la tarta */
-    height: auto; /* Mantiene la proporción del icono */
-    margin-left: 5px; /* Espacio entre el texto y el icono */
+    width: 18px; /* Tamaño ajustable del icono */
+    height: auto;
+    margin-left: 5px;
 }
 
 /* Estilos de la sección hero */
@@ -52,25 +56,30 @@ nav a {
 
 .hero h1 {
     font-size: 2.5rem;
+    margin-bottom: 20px;
 }
 
 .hero p {
     font-size: 1.2rem;
+    margin-bottom: 20px;
 }
 
-/* Estilos de la sección de descarga */
+.hero img {
+    width: 70%; /* Tamaño ajustado relativo */
+    max-width: 400px; /* Límite máximo */
+    height: auto;
+}
+
+/* Sección de descarga */
 .descarga {
     text-align: center;
     padding: 40px 20px;
 }
 
-.qr-code img {
-    width: 150px; /* Tamaño ajustable */
-}
-
-.download-links img {
-    width: 120px; /* Tamaño ajustable */
-    margin: 10px;
+.qr-code img, .download-links img {
+    width: 30%; /* Tamaño relativo */
+    max-width: 150px; /* Límite máximo */
+    margin: 10px 0;
 }
 
 /* Estilos del formulario de contacto */

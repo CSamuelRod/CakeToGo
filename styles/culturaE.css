@@ -1,0 +1,83 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff7f0; /* Color crema claro */
+    color: #333;
+}
+
+header {
+    background-color: #fef4f0; /* Color crema */
+    color: black;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+header {
+    background-color: #fef4f0; /* Color crema */
+    color: black;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo img {
+    width: 110%; /* Tamaño ajustado del logo */
+    max-width: 120px; /* Límite máximo en píxeles */
+    height: auto; /* Mantiene la proporción */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.icono-tarta {
+    width: 18px; /* Tamaño ajustable del icono */
+    height: auto;
+    margin-left: 5px;
+}
+section {
+    padding: 40px 20px;
+    line-height: 1.6;
+}
+
+.section-title {
+    font-size: 2rem;
+    color: #d88a8a; /* Rojo pastel */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.values-list {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+.values-list li {
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #4b3832; /* Color oscuro */
+    color: white;
+}

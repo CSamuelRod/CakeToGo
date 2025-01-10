@@ -76,10 +76,28 @@ nav a {
     padding: 40px 20px;
 }
 
-.qr-code img, .download-links img {
+.qr-code img {
     width: 30%; /* Tamaño relativo */
     max-width: 150px; /* Límite máximo */
     margin: 10px 0;
+}
+
+.download-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.download-links .iconosStores img {
+    width: 120px; /* Tamaño inicial de los íconos */
+    height: auto; /* Mantener proporción */
+    transition: transform 0.3s ease; /* Efecto de hover */
+}
+
+.download-links .iconosStores img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño al pasar el mouse */
 }
 
 /* Estilos del formulario de contacto */
@@ -137,6 +155,23 @@ footer {
     color: white;
 }
 
+footer .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+footer .social-links .logosRedes img {
+    width: 20px; /* Tamaño inicial de los logos */
+    height: auto;
+    transition: transform 0.3s ease; /* Efecto al pasar el mouse */
+}
+
+footer .social-links .logosRedes img:hover {
+    transform: scale(1.2); /* Aumenta ligeramente el tamaño al pasar el mouse */
+}
+
 /* Media Queries para móviles */
 @media (max-width: 768px) {
     nav {
@@ -170,5 +205,13 @@ footer {
 
     .contacto button {
         font-size: 1rem;
+    }
+
+    footer .social-links .logosRedes img {
+        width: 30px; /* Reducir el tamaño de los logos en móviles */
+    }
+
+    .download-links .iconosStores img {
+        width: 80px; /* Ajustar el tamaño de los íconos en móviles */
     }
 }
